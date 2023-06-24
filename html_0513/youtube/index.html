@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="icon" href="./image/favicon.png" type="image/x-icon">
+    <!--bootstrap cdn 연동-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <!-- style. css 연동코드-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--이제 body 내부에서만 html 태그와 bootstrap 코드를 붙여넣어주면 됩니다. -->
+    <!-- 1. youtube 홈버튼 영역, 검색바 넣어주기 (bootstrap 참고), 로그인 버튼 넣어주기 (bootstrap 참고)-->
+    <header>
+        <div class="ogo">
+            <a href="https://www.youtube.com/"><img src="./image/logo2.png" width="350" height="100"></a>
+            <nav class="navbar bg-light" text-align-center>
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+        
+    </header>
+    <!-- 2. 메뉴 버튼들 넣어주기 (bootstrap 참고)
+    혹은 <input type="button"> 사용해서 css 잡아줄 수도 있습니다 (학습장 2회차 수업 참조)
+    -->
+    <a class="btn btn-primary" href="https://www.youtube.com/" role="button">전체</a>
+    <a class="btn btn-primary" href="https://www.youtube.com/" role="button">게임</a>
+    <a class="btn btn-primary" href="https://www.youtube.com/" role="button">음악</a>
+    <a class="btn btn-primary" href="https://www.youtube.com/" role="button">실시간</a>
+    <a class="btn btn-primary" href="https://www.youtube.com/" role="button">축구</a>
+    <!--3.썸네일 영역 잡아주기 (div태그와 css 엮어서 만들거나, 표(table 사용),card 형식 bootstrap에서 사용)-->
+    <!-- 클릭 시 다른 페이지로 이동 되게끔! <a> 태그로 한번 감싸주세요. -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <a href="https://www.youtube.com/watch?v=-6S01AeFp4k"><img src="./image/s1.png" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">한 시간 동안 손흥민이 골만 넣는 영상｜⭐손흥민 PL 100호골 기원⭐ 프리미어리그 모든 골 정주행</h5>
+              <p class="card-text">조회수 2,723,731회  2023. 2. 25.  #손흥민 #토트넘 #축구
+                #손흥민 #토트넘 #축구
+                
+                토트넘 v 첼시 ⚽
+                내일 (일) 밤 10시 30분 👉 SPOTV NOW
+                
+                SPOTV표 황금레시피, SPOTV Originals!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./image/s2.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">[EN] 결국 재입대했습니다 [육군3사관학교]ㅣ전과자 ep.26</h5>
+              <p class="card-text">조회수 3,527,645회  2023. 6. 8.  #전과자 #이창섭 #ootbSTUDIO
+                “전과자 재입대를 명 받았습니다..!🪖”
+                
+                🔥50만 공약🔥을 지키기 위해
+                재입대하게 된 전과자!
+                
+                군대에 이렇게 다양한 학과가 있다고?
+                하지만 이어지는 실습에 몰려오는 전과자의 PTSD😱
+                
+                공감과 정보와 추억을 모두 담은
+                캠퍼스 문화 부흥 프로젝트
+                
+                📚 매일 전과하는 남자 [전과자]
+                📚 매주 목요일 오후 6시</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./image/s3.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">블랙넛(Black Nut)의 킬링벌스를 라이브로! | BOMAYE, THAT'S FINE, 그라타타, Watch, 100 등</h5>
+              <p class="card-text">조회수 2,215,654회  최초 공개: 2023. 6. 21.  #블랙넛 #blacknut #DingoFreestyle
+                00:00 오프닝
+                00:05 BOMAYE
+                00:47 Three
+                02:09 THAT’S FINE
+                03:04 Honmono (feat. Black Nut)
+                04:26 금요일 밤
+                05:50 Watch (Feat. Black Nut)
+                07:41 그라타타
+                08:46 양아치
+                10:49 Grrr - Spotify Singles
+                11:55 100
+                
+                #블랙넛 #blacknut #killingverse 
+                #한국힙합 #국내힙합 #힙합 #국힙 #딩프 #딩고
+                #딩고프리스타일 #DingoFreestyle #DF #DFLive #킬링벌스
+                
+                딩고프리스타일 : df@makeus.com
+                
+                ▶딩고프리스타일 (Dingo Freestyle) : http://bit.ly/Dingo__Freestyle
+                ▶딩고뮤직 (Dingo Music) : http://bit.ly/Dingo__Music
+                </p>
+            </div>
+          </div>
+        </div>
+        
+     </div>
+    <!--구분선 <hr> 넣어주기 -->
+    <hr>
+    <!-- 4. shorts 영역 도 카드 혹은 div 태그로 박스 만들어서 넣어주기 / 힘들면 표로 넣어주셔도 돼요-->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--구분선 <hr> 넣어주기 -->
+    <hr>
+    <!-- 5. 썸네일 영역 다시 잡아주기 (위와 동일)-->
+    
+</body>
+</html>
